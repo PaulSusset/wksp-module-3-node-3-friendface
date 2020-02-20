@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Roboto+Slab:300&display=swap');
 @import 'reset';
 @import 'typography';
+@import 'user';
 
 body {
     background: #fafafa;
@@ -16,7 +17,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         color: slategray;
 
@@ -56,4 +57,9 @@ body {
         justify-content: space-between;
         min-height: 500px;
     }
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
