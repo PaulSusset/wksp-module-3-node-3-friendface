@@ -1,0 +1,7 @@
+
+<div ><img class="user" src="<%- user.avatarUrl%>" alt="<%- user.name%>"></div>
+<div class="friendRow">
+    <% friendsFile.forEach(friend=>{ %>
+        <a href="/user/<%-friend.id%>"class="friendBox" ><img class="friendFlip"src="<%- friend.avatarUrl %>" alt="<%- friend.name%>" /></a>
+            <% }) %>
+</div>

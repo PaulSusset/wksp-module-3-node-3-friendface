@@ -83,6 +83,91 @@ codeblock {
   margin: 12px 32px 6px 0;
   padding: 12px 14px; }
 
+.site-title {
+  color: white;
+  background: #01af01;
+  padding: 10px;
+  position: absolute;
+  top: 25px;
+  left: 25px; }
+
+.signin-form {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fdffe6; }
+
+.signbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: black 1px solid;
+  background: white;
+  padding: 15px;
+  width: 20vw; }
+
+.input {
+  width: 170px;
+  height: 20px; }
+
+.button {
+  width: 176px;
+  padding: 0; }
+
+.user {
+  width: 100vw;
+  height: 60vh;
+  object-fit: cover;
+  object-position: 0px; }
+
+.friendRow {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 37vh; }
+
+.friend {
+  border-radius: 50%;
+  height: 100%;
+  width: auto; }
+
+.friendBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 33vw;
+  padding: 10px; }
+
+.fffBox {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  flex-wrap: wrap; }
+
+.friendFlip {
+  border-radius: 50%;
+  width: 80%;
+  border: #01af01 6px solid; }
+
+.displayNone {
+  display: none; }
+
+.fffPosition {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  color: white;
+  background: #01af01;
+  padding: 10px;
+  text-decoration: none; }
+
 body {
   background: #fafafa;
   display: flex;
@@ -95,7 +180,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: slategray; }
     .main.four-oh-four .title {
@@ -123,3 +208,8 @@ body {
     flex-direction: row;
     justify-content: space-between;
     min-height: 500px; } }
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center; }

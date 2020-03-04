@@ -1,0 +1,15 @@
+<%- include('../partials/header', {}) %>
+<div class="fffBox">
+    <% futureFriends.forEach(friend=>{%>
+        <div class="friendBox">
+            <a class="flex"href="/user/<%- friend.id %>"><img class="friendFlip"src=<%- friend.avatarUrl %>  alt="<%- friend.name %>"></a>
+            <h3><%-friend.name%></h3>
+            <form method="POST" action="/newFriend">
+                <input class="displayNone"name="friend" value="<%-friend.id%>"></input>
+                <input type="submit" value="Add face"></input>
+            </form>
+    </div>
+    <%})%>
+</div>
+
+<%- include('../partials/footer', {}) %>
