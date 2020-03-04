@@ -5,7 +5,8 @@
             <a class="flex"href="/user/<%- friend.id %>"><img class="friendFlip"src=<%- friend.avatarUrl %>  alt="<%- friend.name %>"></a>
             <h3><%-friend.name%></h3>
             <form method="POST" action="/newFriend">
-                <button name="<%-friend.id%>" type="">Add face</button>
+                <input class="displayNone"name="friend" value="<%-friend.id%>"></input>
+                <input type="submit" value="Add face"></input>
             </form>
     </div>
     <%})%>

@@ -126,6 +126,7 @@ codeblock {
 .friendRow {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   width: 100vw;
   height: 37vh; }
 
@@ -152,9 +153,20 @@ codeblock {
 
 .friendFlip {
   border-radius: 50%;
-  height: 80%;
   width: 80%;
   border: #01af01 6px solid; }
+
+.displayNone {
+  display: none; }
+
+.fffPosition {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  color: white;
+  background: #01af01;
+  padding: 10px;
+  text-decoration: none; }
 
 body {
   background: #fafafa;

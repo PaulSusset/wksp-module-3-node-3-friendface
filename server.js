@@ -75,10 +75,12 @@ const findFutureFriends = (req, res)=>{
     res.render("pages/fff", {title, futureFriends})
 }
 const newFriendHandle = (req, res)=>{
-    const { name } = req.body;
-
+    const newFriend = req.body.friend
+    currentUser.friends.push(newFriend);
+    let newFriend2 = users.find(user=>user.id === newFriend.toString())
+    console.log('friend', newFriend2)
+    newFriend2.friends.push(currentUser.id);
     res.redirect("/fff");
-
 }
 // -----------------------------------------------------
 // server endpoints
